@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="=X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    </body>
+    </html>
+<!-- bootstrap css-->
+ <link href="https://www.sitepoint.com/tutorial-tumblr-theme-with-bootstrap.min.css" rel="stylesheet">
+ <style type="text/css">
+    body  {
+        padding-top: 50px;
+    }
+    .container {
+        width: 300px;
+    }
+ </style>
+ <nav class="navbar fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">simple tumblr theme</a>
+ </nav>
+ <title>{tumblr theme}</title>
+ <div class="container">
+ </div>
+    {block:Posts}
+    {/block:post}
+    {block:text}
+    <h2>{title}</h2>
+    <p>{body}</p>
+    {/block:Text} 
+
+    {block:Photo} 
+    <div class="card">
+        <img class="card-img-top" src="{PhotoURL-500}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{Caption}</h5>
+        </div>
+    </div>
+    {/block:Photo} 
+
+    <p class="text-center">
+  {block:PreviousPage}
+    <a href="{PreviousPage}" class="btn btn-secondary">Previous</a>
+  {/block:PreviousPage}
+  {block:NextPage}
+    <a href="{NextPage}" class="btn btn-secondary">Next</a>
+  {/block:NextPage}
+</p>
+
+<!--
+File: index.html
+GUI Assignment: Creating Your First Web Page
+Tahirbhai Khalifa, Tahirbhai_khalifa@student.uml.edu
+-->

@@ -1,0 +1,130 @@
+/* Ensure HTML5 elements are block-level (for older browsers) */
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+  display: block;
+}
+
+/* Body background with gradient and fallback color */
+body {
+  background: url('ptrbackground.jpg') repeat-x top center, #00569f;
+  color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container: responsive and centered */
+#container {
+  width: 80%;
+  min-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  overflow: hidden; /* Clears floats */
+  padding: 20px;
+}
+
+/* Header spacing */
+header {
+  background-color: transparent;
+  padding: 20px 0;
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 0;
+  padding: 10px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h2 {
+  color: #3399CC;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Navigation styles */
+nav {
+  float: left;
+  width: 200px;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+  color: #00569f;
+  font-weight: bold;
+}
+
+nav a:visited {
+  color: #344873;
+}
+
+nav a:hover {
+  color: #FFFFFF;
+  background-color: #00569f;
+}
+
+/* Main content section next to navigation */
+#content {
+  margin-left: 220px;
+}
+
+/* Custom list bullets using image */
+ul.custom-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.custom-list li {
+  background: url('marker.gif') no-repeat left center;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Special style for resort name */
+.resortName {
+  color: #00569f;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+/* Paragraph spacing */
+p {
+  margin: 10px 0;
+}
+
+/* Footer style */
+footer {
+  font-family: Georgia, "Times New Roman", serif;
+  clear: both;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Contact info size */
+#contact {
+  font-size: 90%;
+}
+
+/* Description list terms */
+dt {
+  color: #000033;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
